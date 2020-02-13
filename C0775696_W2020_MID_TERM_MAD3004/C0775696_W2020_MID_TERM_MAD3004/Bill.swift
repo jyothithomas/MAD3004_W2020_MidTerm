@@ -19,13 +19,24 @@ class Bill: IDisplay
     var billDate: Date?
     var billType: BillType
     var totalBilltoPay: Double
+    {
+        return 0
+    }
     
-    init(billId: Int, billDate: Date, billType: BillType, totalBilltoPay: Double) {
+    init(billId: Int, billDate: Date, billType: BillType) {
         self.billId = billId
         self.billDate = billDate
         self.billType = billType
-        self.totalBilltoPay = totalBilltoPay
     }
+    
+    
+    init(billId: Int, billType: BillType)
+    {
+        self.billId = billId
+        self.billType = billType
+    }
+    
+    
     func display() {
       print("Bill Id:          :\(self.billId)")
        print("Bill Type:      :\(self.billType)")
