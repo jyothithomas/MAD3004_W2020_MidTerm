@@ -38,6 +38,7 @@ class Bill: IDisplay
     
     
     func display() {
+      print("***************BILL**********************")
       print("Bill Id:          :\(self.billId)")
        print("Bill Type:      :\(self.billType)")
       if let d = self.billDate
