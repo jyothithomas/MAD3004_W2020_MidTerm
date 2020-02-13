@@ -12,6 +12,8 @@
 		9B695F8E23F5FF1300DA8208 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B695F8D23F5FF1300DA8208 /* Bill.swift */; };
 		9B9E9C4C23F6090E00EF5299 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9E9C4B23F6090E00EF5299 /* Mobile.swift */; };
 		9B9E9C4E23F60FE200EF5299 /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9E9C4D23F60FE200EF5299 /* Hydro.swift */; };
+		9B9E9C5023F612C000EF5299 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9E9C4F23F612C000EF5299 /* Internet.swift */; };
+		9B9E9C5223F6144E00EF5299 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9E9C5123F6144E00EF5299 /* Customer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +35,8 @@
 		9B695F8D23F5FF1300DA8208 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 		9B9E9C4B23F6090E00EF5299 /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 		9B9E9C4D23F60FE200EF5299 /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
+		9B9E9C4F23F612C000EF5299 /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
+		9B9E9C5123F6144E00EF5299 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 				9B695F8B23F5FEEB00DA8208 /* IDisplay.swift */,
 				9B9E9C4B23F6090E00EF5299 /* Mobile.swift */,
 				9B9E9C4D23F60FE200EF5299 /* Hydro.swift */,
+				9B9E9C4F23F612C000EF5299 /* Internet.swift */,
+				9B9E9C5123F6144E00EF5299 /* Customer.swift */,
 			);
 			path = C0775696_W2020_MID_TERM_MAD3004;
 			sourceTree = "<group>";
@@ -132,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B9E9C5023F612C000EF5299 /* Internet.swift in Sources */,
+				9B9E9C5223F6144E00EF5299 /* Customer.swift in Sources */,
 				9B9E9C4E23F60FE200EF5299 /* Hydro.swift in Sources */,
 				9B695F8C23F5FEEB00DA8208 /* IDisplay.swift in Sources */,
 				9B695F8E23F5FF1300DA8208 /* Bill.swift in Sources */,

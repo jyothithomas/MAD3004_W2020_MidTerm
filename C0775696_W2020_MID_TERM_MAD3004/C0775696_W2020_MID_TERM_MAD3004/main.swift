@@ -20,3 +20,9 @@ var h1 = Hydro(agencyName: "Hydroessens", unitConsumed: 900, billId: 21, billTyp
 b2.display()
 h1.display()
 
+var b3 = Bill(billId: 31, billDate: Date(), billType: .Internet)
+var i1 = Internet(providerName: "Rogers", internetGBUsed: 4.25, billId: 31, billType: .Internet)
+
+b3.display()
+i1.display()
+
