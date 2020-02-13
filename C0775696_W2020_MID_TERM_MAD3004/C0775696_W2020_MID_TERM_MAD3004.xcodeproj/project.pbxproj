@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B695F7223F5FE2E00DA8208 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B695F7123F5FE2E00DA8208 /* main.swift */; };
+		9B695F8523F5FE9600DA8208 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B695F8423F5FE9600DA8208 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9B695F6C23F5FE2E00DA8208 /* CopyFiles */ = {
+		9B695F7F23F5FE9600DA8208 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9B695F6E23F5FE2E00DA8208 /* CO775696_W2020_MID_TERM_MAD3004 a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CO775696_W2020_MID_TERM_MAD3004 a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B695F7123F5FE2E00DA8208 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9B695F8123F5FE9600DA8208 /* C0775696_W2020_MID_TERM_MAD3004 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = C0775696_W2020_MID_TERM_MAD3004; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B695F8423F5FE9600DA8208 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9B695F6B23F5FE2E00DA8208 /* Frameworks */ = {
+		9B695F7E23F5FE9600DA8208 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,66 +38,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9B695F6523F5FE2E00DA8208 = {
+		9B695F7823F5FE9600DA8208 = {
 			isa = PBXGroup;
 			children = (
-				9B695F7023F5FE2E00DA8208 /* CO775696_W2020_MID_TERM_MAD3004 a */,
-				9B695F6F23F5FE2E00DA8208 /* Products */,
+				9B695F8323F5FE9600DA8208 /* C0775696_W2020_MID_TERM_MAD3004 */,
+				9B695F8223F5FE9600DA8208 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9B695F6F23F5FE2E00DA8208 /* Products */ = {
+		9B695F8223F5FE9600DA8208 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B695F6E23F5FE2E00DA8208 /* CO775696_W2020_MID_TERM_MAD3004 a */,
+				9B695F8123F5FE9600DA8208 /* C0775696_W2020_MID_TERM_MAD3004 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9B695F7023F5FE2E00DA8208 /* CO775696_W2020_MID_TERM_MAD3004 a */ = {
+		9B695F8323F5FE9600DA8208 /* C0775696_W2020_MID_TERM_MAD3004 */ = {
 			isa = PBXGroup;
 			children = (
-				9B695F7123F5FE2E00DA8208 /* main.swift */,
+				9B695F8423F5FE9600DA8208 /* main.swift */,
 			);
-			path = "CO775696_W2020_MID_TERM_MAD3004 a";
+			path = C0775696_W2020_MID_TERM_MAD3004;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9B695F6D23F5FE2E00DA8208 /* CO775696_W2020_MID_TERM_MAD3004 a */ = {
+		9B695F8023F5FE9600DA8208 /* C0775696_W2020_MID_TERM_MAD3004 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B695F7523F5FE2E00DA8208 /* Build configuration list for PBXNativeTarget "CO775696_W2020_MID_TERM_MAD3004 a" */;
+			buildConfigurationList = 9B695F8823F5FE9600DA8208 /* Build configuration list for PBXNativeTarget "C0775696_W2020_MID_TERM_MAD3004" */;
 			buildPhases = (
-				9B695F6A23F5FE2E00DA8208 /* Sources */,
-				9B695F6B23F5FE2E00DA8208 /* Frameworks */,
-				9B695F6C23F5FE2E00DA8208 /* CopyFiles */,
+				9B695F7D23F5FE9600DA8208 /* Sources */,
+				9B695F7E23F5FE9600DA8208 /* Frameworks */,
+				9B695F7F23F5FE9600DA8208 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "CO775696_W2020_MID_TERM_MAD3004 a";
-			productName = "CO775696_W2020_MID_TERM_MAD3004 a";
-			productReference = 9B695F6E23F5FE2E00DA8208 /* CO775696_W2020_MID_TERM_MAD3004 a */;
+			name = C0775696_W2020_MID_TERM_MAD3004;
+			productName = C0775696_W2020_MID_TERM_MAD3004;
+			productReference = 9B695F8123F5FE9600DA8208 /* C0775696_W2020_MID_TERM_MAD3004 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9B695F6623F5FE2E00DA8208 /* Project object */ = {
+		9B695F7923F5FE9600DA8208 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Lambton College";
 				TargetAttributes = {
-					9B695F6D23F5FE2E00DA8208 = {
+					9B695F8023F5FE9600DA8208 = {
 						CreatedOnToolsVersion = 11.3;
 					};
 				};
 			};
-			buildConfigurationList = 9B695F6923F5FE2E00DA8208 /* Build configuration list for PBXProject "CO775696_W2020_MID_TERM_MAD3004 a" */;
+			buildConfigurationList = 9B695F7C23F5FE9600DA8208 /* Build configuration list for PBXProject "C0775696_W2020_MID_TERM_MAD3004" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -105,29 +105,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 9B695F6523F5FE2E00DA8208;
-			productRefGroup = 9B695F6F23F5FE2E00DA8208 /* Products */;
+			mainGroup = 9B695F7823F5FE9600DA8208;
+			productRefGroup = 9B695F8223F5FE9600DA8208 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9B695F6D23F5FE2E00DA8208 /* CO775696_W2020_MID_TERM_MAD3004 a */,
+				9B695F8023F5FE9600DA8208 /* C0775696_W2020_MID_TERM_MAD3004 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9B695F6A23F5FE2E00DA8208 /* Sources */ = {
+		9B695F7D23F5FE9600DA8208 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B695F7223F5FE2E00DA8208 /* main.swift in Sources */,
+				9B695F8523F5FE9600DA8208 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		9B695F7323F5FE2E00DA8208 /* Debug */ = {
+		9B695F8623F5FE9600DA8208 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -187,7 +187,7 @@
 			};
 			name = Debug;
 		};
-		9B695F7423F5FE2E00DA8208 /* Release */ = {
+		9B695F8723F5FE9600DA8208 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -240,7 +240,7 @@
 			};
 			name = Release;
 		};
-		9B695F7623F5FE2E00DA8208 /* Debug */ = {
+		9B695F8923F5FE9600DA8208 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -249,7 +249,7 @@
 			};
 			name = Debug;
 		};
-		9B695F7723F5FE2E00DA8208 /* Release */ = {
+		9B695F8A23F5FE9600DA8208 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -261,25 +261,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9B695F6923F5FE2E00DA8208 /* Build configuration list for PBXProject "CO775696_W2020_MID_TERM_MAD3004 a" */ = {
+		9B695F7C23F5FE9600DA8208 /* Build configuration list for PBXProject "C0775696_W2020_MID_TERM_MAD3004" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B695F7323F5FE2E00DA8208 /* Debug */,
-				9B695F7423F5FE2E00DA8208 /* Release */,
+				9B695F8623F5FE9600DA8208 /* Debug */,
+				9B695F8723F5FE9600DA8208 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B695F7523F5FE2E00DA8208 /* Build configuration list for PBXNativeTarget "CO775696_W2020_MID_TERM_MAD3004 a" */ = {
+		9B695F8823F5FE9600DA8208 /* Build configuration list for PBXNativeTarget "C0775696_W2020_MID_TERM_MAD3004" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B695F7623F5FE2E00DA8208 /* Debug */,
-				9B695F7723F5FE2E00DA8208 /* Release */,
+				9B695F8923F5FE9600DA8208 /* Debug */,
+				9B695F8A23F5FE9600DA8208 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9B695F6623F5FE2E00DA8208 /* Project object */;
+	rootObject = 9B695F7923F5FE9600DA8208 /* Project object */;
 }
