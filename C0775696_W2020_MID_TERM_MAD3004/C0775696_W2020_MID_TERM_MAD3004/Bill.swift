@@ -18,7 +18,7 @@ class Bill: IDisplay
     var billId: Int
     var billDate: Date?
     var billType: BillType
-    lazy var totalBilltoPay: Double
+    var totalBilltoPay: Double
     
     init(billId: Int, billDate: Date, billType: BillType, totalBilltoPay: Double) {
         self.billId = billId
@@ -28,19 +28,16 @@ class Bill: IDisplay
     }
     func display() {
       print("Bill Id:          :\(self.billId)")
-       print("Bill Date:        :\(self.billDate)")
-       print("Gender:      :\(self.gender)")
-      if let d = self.birthDate
+       print("Bill Type:      :\(self.billType)")
+      if let d = self.billDate
       {
-       print("BirthDate:    : \(d)")
-          print("Age:\(self.age)")
+       print("Bill Date:    : \(d)")
       } else {
-          print("-- No Birthdate Found")
+          print("-- No Bill Date Found")
       }
-       print("ID: \(self.id)")
-      
-        
-    }}
+    }
+    
+}
 
 
 
