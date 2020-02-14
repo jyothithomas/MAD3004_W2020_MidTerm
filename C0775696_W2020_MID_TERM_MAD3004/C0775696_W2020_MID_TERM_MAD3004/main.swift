@@ -7,8 +7,6 @@
 //
 
 import Foundation
-let dateFormatter = DateFormatter()
-dateFormatter.dateFormat = "yyyy-MM-dd"
 var b1 = Bill(billId: 11, billDate: Date(), billType: .Mobile)
 var m1 = Mobile(billId: b1.billId, billType: .Mobile, mobileManufacturerName: "Bell", planName: "Freedom", mobileNumber: "4372435081", internetGBUsed: 3.29, minuteUsed: 4000)
 var b2 = Bill(billId: 21, billDate: Date(), billType: .Hydro)
