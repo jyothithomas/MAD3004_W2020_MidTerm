@@ -27,6 +27,12 @@ var h2 = Hydro(agencyName: "EssentialHydro", unitConsumed: 570, billId: 22, bill
 
 var c2 = Customer(customerId: 2, firstName: "James", lastName: "Thomas", emailId: "jamest644@gmail.com", bill: ["Hydro": h2.totalHydroBill, "Mobile" : m2.totalMobileBill])
 
+var b6 = Bill(billId: 32, billDate: Date(), billType: .Mobile)
+var i2 = Internet(providerName: "BSNL", internetGBUsed: 7.75, billId: 32 , billType: .Internet)
+
+
+var c3 = Customer(customerId: 3, firstName: "Raelyn", lastName: "James", emailId: "rae_lyn05@gmail.com", bill: ["Internet" : i2.totalInternetBill])
+
 c1.display()
 b1.display()
 m1.display()
@@ -40,6 +46,12 @@ b4.display()
 m2.display()
 b5.display()
 h2.display()
+
+c3.display()
+i2.display()
+
+
+
 
 
 
