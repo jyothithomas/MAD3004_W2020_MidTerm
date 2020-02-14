@@ -26,7 +26,7 @@ class Hydro: Bill
     private func calculateTotalHydro() -> Double
     {
         var t = 0.0
-        t = self.unitConsumed * 5.00
+        t = self.unitConsumed * 0.50
         return t
     }
     

@@ -9,7 +9,7 @@
 import Foundation
 
 var b1 = Bill(billId: 11, billDate: Date(), billType: .Mobile)
-var m1 = Mobile(billId: 11, billDate: Date(), billType: .Mobile, mobileManufacturerName: "Bell", planName: "Freedom", mobileNumber: "4372435081", internetGBUsed: 3.29, minuteUsed: 4000)
+var m1 = Mobile(billId: 11, billType: .Mobile, mobileManufacturerName: "Bell", planName: "Freedom", mobileNumber: "4372435081", internetGBUsed: 3.29, minuteUsed: 4000)
 
 b1.display()
 m1.display()
