@@ -32,9 +32,9 @@ class Internet: Bill
     
      override func display() {
         print("************* Internet Bill ******************************")
-        print("Provider name:                      \(providerName)")
-        print("Internet Used in GB:                    \(internetGBUsed)")
-        print("Total Internet Bill:                  \(totalInternetBill)")
+        print("Provider name:                       \(providerName)")
+        print("Internet Used in GB:                 \(internetGBUsed)")
+        print("Total Internet Bill:                 \(totalInternetBill)")
         print("*********************************************************")
     }
     
