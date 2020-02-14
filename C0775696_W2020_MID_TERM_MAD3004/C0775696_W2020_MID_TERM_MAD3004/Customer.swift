@@ -24,7 +24,7 @@ class Customer: IDisplay
         return self.calculateTotalBill()
     }
     
-    init(customerId: Int, firstName: String, lastName: String, fullName: String, emailId: String, bill: [String: Double]) {
+    init(customerId: Int, firstName: String, lastName: String, emailId: String, bill: [String: Double]) {
         self.customerId = customerId
         self.firstName = firstName
         self.lastName = lastName

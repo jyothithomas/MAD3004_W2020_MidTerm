@@ -26,3 +26,9 @@ var i1 = Internet(providerName: "Rogers", internetGBUsed: 4.25, billId: 31, bill
 b3.display()
 i1.display()
 
+var c1 = Customer(customerId: 1, firstName: "Jyothi", lastName: "Thomas", emailId: "jyothithomas.05@gmail.com", bill: ["Internet" : i1.totalInternetBill, "Hydro": h1.totalHydroBill, "Mobile" : m1.totalMobileBill])
+
+c1.display()
+
+
+
