@@ -20,9 +20,8 @@ class Bill: IDisplay
     var billType: BillType
     var totalBilltoPay: Double
     {
-        return 0
+        return self.totalBill()
     }
-    
     init(billId: Int, billDate: Date, billType: BillType) {
         self.billId = billId
         self.billDate = billDate
@@ -34,6 +33,12 @@ class Bill: IDisplay
     {
         self.billId = billId
         self.billType = billType
+    }
+    
+    func totalBill () -> Double
+    {
+        return self.totalBilltoPay
+        
     }
     
     

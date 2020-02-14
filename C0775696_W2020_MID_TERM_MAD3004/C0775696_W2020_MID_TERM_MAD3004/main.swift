@@ -7,7 +7,7 @@
 //
 
 import Foundation
-var b1 = Bill(billId: 11, billDate: Date(), billType: .Mobile)
+var b1 = Bill(billId: 11, billDate: "2012-12-12".toDate(), billType: .Mobile)
 var m1 = Mobile(billId: b1.billId, billType: .Mobile, mobileManufacturerName: "Bell", planName: "Freedom", mobileNumber: "4372435081", internetGBUsed: 3.29, minuteUsed: 4000)
 var b2 = Bill(billId: 21, billDate: Date(), billType: .Hydro)
 var h1 = Hydro(agencyName: "Hydroessens", unitConsumed: 900, billId:b2.billId, billType: .Hydro)
@@ -46,6 +46,9 @@ c3.display()
 i2.display()
 
 in1.display()
+
+
+
 
 
 

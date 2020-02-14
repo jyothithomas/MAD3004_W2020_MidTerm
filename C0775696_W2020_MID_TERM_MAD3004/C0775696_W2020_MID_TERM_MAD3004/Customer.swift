@@ -50,6 +50,7 @@ class Customer: IDisplay
         }
         return t
     }
+
     
     func display() {
         print("************************Customer Details*******************************")
