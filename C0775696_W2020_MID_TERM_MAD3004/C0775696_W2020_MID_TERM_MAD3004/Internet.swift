@@ -20,10 +20,10 @@ class Internet: Bill
     }
     var totalInternetBill: Double
     {
-        return self.calculateInternetBill()
+        return self.totalBill()
     }
     
-    private func calculateInternetBill() -> Double
+    override func totalBill() -> Double
     {
         var t = 0.0
         t = self.internetGBUsed * 10

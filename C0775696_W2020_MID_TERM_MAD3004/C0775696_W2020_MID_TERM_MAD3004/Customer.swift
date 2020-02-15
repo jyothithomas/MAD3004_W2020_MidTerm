@@ -18,18 +18,24 @@ class Customer: IDisplay
             return "\(firstName) \(lastName)"
         }
     var emailId: String
-    var bill = [String: Double]()
+    var bill = [Int: Bill?]()
     var totalAmountToPay: Double
     {
         return self.calculateTotalBill()
     }
     
-    init(customerId: Int, firstName: String, lastName: String, emailId: String, bill: [String: Double]) {
+    init(customerId: Int, firstName: String, lastName: String, emailId: String, bill: [Int: Bill?]) {
         self.customerId = customerId
         self.firstName = firstName
         self.lastName = lastName
         self.emailId = emailId
-        self.bill = bill
+        if let b = bill
+        {
+            self.bill[code] = b
+        }
+        else{
+            self.computer = nil
+        }
     }
     subscript(code: String) -> Double
     {

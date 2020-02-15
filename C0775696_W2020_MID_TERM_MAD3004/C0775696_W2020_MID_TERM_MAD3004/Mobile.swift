@@ -29,10 +29,10 @@ class Mobile: Bill
     
     var totalMobileBill: Double
     {
-        return self.calculateTotal()
+        return self.totalBill()
     }
     
-    private func calculateTotal() -> Double
+    override func totalBill() -> Double
     {
         var t = 0.0
         t = (self.internetGBUsed * self.minuteUsed)/100

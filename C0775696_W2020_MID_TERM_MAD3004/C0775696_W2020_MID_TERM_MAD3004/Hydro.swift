@@ -20,10 +20,10 @@ class Hydro: Bill
     }
     var totalHydroBill: Double
     {
-        return self.calculateTotalHydro()
+        return self.totalBill()
     }
     
-    private func calculateTotalHydro() -> Double
+    override func totalBill() -> Double
     {
         var t = 0.0
         t = self.unitConsumed * 0.50
