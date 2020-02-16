@@ -13,30 +13,24 @@ class Mobile: Bill
     
     var mobileManufacturerName: String
     var planName: String
-    var mobileNumber: String
+    var mobileNumber: Int
     var internetGBUsed: Double
     var minuteUsed: Double
     
-    init(billId: Int, billType: BillType,mobileManufacturerName: String,planName: String, mobileNumber: String, internetGBUsed: Double,minuteUsed: Double ){
+   init(billId: String, billDate: Date, billType: BillType, mobileManufacturerName: String, planName: String, mobileNumber: Int, internetGBUsed: Double, minuteUsed: Double)
+   {
         
         self.mobileManufacturerName = mobileManufacturerName
         self.planName = planName
         self.mobileNumber = mobileNumber
         self.internetGBUsed = internetGBUsed
         self.minuteUsed = minuteUsed
-        super.init(billId: billId, billType: billType)
+        super.init(billId: billId, billDate: billDate, billType: billType)
     }
     
-    var totalMobileBill: Double
+      override func calculateTotalBill()
     {
-        return self.totalBill()
-    }
-    
-    override func totalBill() -> Double
-    {
-        var t = 0.0
-        t = (self.internetGBUsed * self.minuteUsed)/100
-        return t
+        self.totalBilltoPay = internetGBUsed //* 10 + Double(minuteUsed)* 0.50
     }
     
      override func display() {
@@ -44,7 +38,7 @@ class Mobile: Bill
         print("mobileManufacturerName:      \(mobileManufacturerName)")
         print("planName:                    \(planName)")
         print("mobileNumber:                \(mobileNumber)")
-        print("totalMobileBill:             \(totalMobileBill)")
+        print("totalMobileBill:             \(totalBilltoPay)")
         print("*********************************************************")
     }
 }
