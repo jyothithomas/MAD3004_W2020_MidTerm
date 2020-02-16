@@ -15,7 +15,7 @@ enum BillType
 }
 class Bill: FindTotalBill, IDisplay
 {
-    var billId: Int
+    var billId: String
     var billDate: Date?
     var billType: BillType
     var totalBilltoPay: Double = 0.0
