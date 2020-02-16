@@ -13,28 +13,23 @@ class Internet: Bill
     var providerName: String
     var internetGBUsed: Double
     
-    init(providerName: String, internetGBUsed: Double, billId: Int, billType: BillType) {
+    init(billId: String, billDate: Date, billType: BillType, providerName: String, internetGBUsed: Double) {
         self.providerName = providerName
         self.internetGBUsed = internetGBUsed
-        super.init(billId: billId, billType: billType)
+        super.init(billId: billId, billDate: billDate, billType: billType)
     }
-    var totalInternetBill: Double
+    override func calculateTotalBill() 
     {
-        return self.totalBill()
-    }
-    
-    override func totalBill() -> Double
-    {
-        var t = 0.0
-        t = self.internetGBUsed * 10
-        return t
+        
+         self.totalBilltoPay = internetGBUsed * 10
+       
     }
     
      override func display() {
         print("************* Internet Bill ******************************")
         print("Provider name:                       \(providerName)")
         print("Internet Used in GB:                 \(internetGBUsed)")
-        print("Total Internet Bill:                 \(totalInternetBill)")
+        print("Total Internet Bill:                 \(totalBilltoPay)")
         print("*********************************************************")
     }
     
