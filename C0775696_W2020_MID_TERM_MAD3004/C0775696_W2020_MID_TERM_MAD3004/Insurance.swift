@@ -6,7 +6,7 @@
 //  Copyright © 2020 Lambton College. All rights reserved.
 //
 
-import Foundation
+/*import Foundation
 
 class Insurance: Bill
 {
@@ -49,5 +49,5 @@ class Insurance: Bill
         print("*********************************************************")
     }
     
-}
+}*/
 
