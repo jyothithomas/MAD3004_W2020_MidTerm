@@ -13,31 +13,22 @@ enum BillType
 {
     case Mobile,Internet,Hydro,Insurance
 }
-class Bill: IDisplay
+class Bill: FindTotalBill, IDisplay
 {
     var billId: Int
     var billDate: Date?
     var billType: BillType
-    var totalBilltoPay: Double
-    {
-        return self.totalBill()
-    }
-    init(billId: Int, billDate: Date, billType: BillType) {
+    var totalBilltoPay: Double = 0.0
+    
+    
+    init(billId: String, billDate: Date, billType: BillType) {
         self.billId = billId
         self.billDate = billDate
         self.billType = billType
     }
     
     
-    init(billId: Int, billType: BillType)
-    {
-        self.billId = billId
-        self.billType = billType
-    }
-    
-    func totalBill () -> Double
-    {
-        return self.totalBilltoPay
+    func calculateTotalBill() {
         
     }
     
