@@ -12,29 +12,22 @@ class Hydro: Bill
 {
     var agencyName: String
     var unitConsumed: Double
-    
-    init(agencyName: String, unitConsumed: Double, billId: Int, billType: BillType) {
+    var ratePerUnit: Double = 12.0 
+    init(billId: String, billDate: Date, billType: BillType, agencyName: String, unitConsumed: Double) {
         self.agencyName = agencyName
         self.unitConsumed = unitConsumed
-        super.init(billId: billId, billType: billType)
+        super.init(billId: billId, billDate: billDate, billType: billType)
     }
-    var totalHydroBill: Double
+        override func calculateTotalBill()
     {
-        return self.totalBill()
-    }
-    
-    override func totalBill() -> Double
-    {
-        var t = 0.0
-        t = self.unitConsumed * 0.50
-        return t
+        self.totalBilltoPay = Double(unitConsumed)*ratePerUnit
     }
     
      override func display() {
         print("************* Hydro Bill ******************************")
         print("agencyName:                      \(agencyName)")
         print("unitConsumed:                    \(unitConsumed)")
-        print("totalHydroBill:                  \(totalHydroBill)")
+        print("totalHydroBill:                  \(totalBilltoPay)")
         print("*********************************************************")
     }
     
