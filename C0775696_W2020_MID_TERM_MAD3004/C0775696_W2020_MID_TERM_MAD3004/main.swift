@@ -7,26 +7,27 @@
 //
 
 import Foundation
-var b1 = Bill(billId: 11, billDate: "2012-12-12".toDate(), billType: .Mobile)
-var m1 = Mobile(billId: b1.billId, billType: .Mobile, mobileManufacturerName: "Bell", planName: "Freedom", mobileNumber: "4372435081", internetGBUsed: 3.29, minuteUsed: 4000)
-var h1 = Hydro(agencyName: "Hydroessens", unitConsumed: 900, billId:b1.billId, billType: .Hydro)
-var i1 = Internet(providerName: "Rogers", internetGBUsed: 4.25, billId: b1.billId, billType: .Internet)
-var c1 = Customer(customerId: 1, firstName: "Jyothi", lastName: "Thomas", emailId: "jyothithomas.05@gmail.com", bill: ["Internet" : i1.totalBill(), "Hydro": h1.totalBill(), "Mobile" : m1.totalBill()])
+
+var m1 = Mobile(billId: "M001", billDate: "2017-07-08".toDate(), billType: .Mobile, mobileManufacturerName: "Bell", planName: "Freedom", mobileNumber: 4372435081, internetGBUsed: 3.29, minuteUsed: 4000.0)
 
 
-var b4 = Bill(billId: 12, billDate: "2015-01-08".toDate(), billType: .Mobile)
-var m2 = Mobile(billId: b4.billId, billType: .Mobile, mobileManufacturerName: "Virgin", planName: "Fido", mobileNumber: "5045678901", internetGBUsed: 5.45, minuteUsed: 600)
-var h2 = Hydro(agencyName: "EssentialHydro", unitConsumed: 570, billId: b4.billId, billType: .Hydro)
-var c2 = Customer(customerId: 2, firstName: "James", lastName: "Thomas", emailId: "jamest644@gmail.com", bill: ["Hydro": h2.totalBill(), "Mobile" : m2.totalBill()])
+var h1 = Hydro(billId: "H001", billDate: "2016-07-08".toDate(), billType: .Hydro, agencyName: "Hydroessens", unitConsumed: 900)
+
+var i1 = Internet(billId: "I001", billDate: "2015-01-08".toDate(), billType: .Internet,providerName: "Rogers", internetGBUsed: 4.25)
+
+var m2 = Mobile(billId: "M002", billDate: "2018-04-09".toDate(), billType: .Mobile, mobileManufacturerName: "Virgin", planName: "Fido", mobileNumber: 5045678901, internetGBUsed: 5.45, minuteUsed: 600.0)
+
+var h2 = Hydro(billId: "H002", billDate: "2019-02-03".toDate(), billType: .Hydro,agencyName: "EssentialHydro", unitConsumed: 570)
 
 
-var b6 = Bill(billId: 32, billDate: "2014-02-07".toDate(), billType: .Internet)
-var i2 = Internet(providerName: "BSNL", internetGBUsed: 7.75, billId: b6.billId , billType: .Internet)
-var c3 = Customer(customerId: 3, firstName: "Raelyn", lastName: "James", emailId: "rae_lyn05@gmail.com", bill: ["Internet" : i2.totalBill()])
+var i2 = Internet(billId: "I002", billDate: "2015-01-08".toDate(), billType: .Mobile,providerName: "BSNL", internetGBUsed: 7.75)
 
-var in1 = Insurance(billId: 41, billType: .Insurance, insuranceProviderName: "Lic", typeOfInsurance: "Life Security", startDate: Date(), endDate: Date())
+var c1 = Customer(customerId: 1, firstName: "Jyothi", lastName: "Thomas", emailId: "jyothithomas.05@gmail.com")
+var c2 = Customer(customerId: 2, firstName: "James", lastName: "Thomas", emailId: "jamest644@gmail.com")
+var c3 = Customer(customerId: 3, firstName: "Raelyn", lastName: "James", emailId: "rae_lyn05@gmail.com")
+var c4 = Customer(customerId: 4, firstName: "Annos", lastName: "Mol", emailId: "ann_oos@gmail.com")
 
-c1.display()
+/*c1.display()
 b1.display()
 m1.display()
 h1.display()
@@ -39,7 +40,62 @@ h2.display()
 
 c3.display()
 b6.display()
-i2.display()
+i2.display()*/
+
+//var in1 = Insurance(billId: 41, billType: .Insurance, insuranceProviderName: "Lic", typeOfInsurance: "Life Security", startDate: Date(), endDate: Date())
+
+c1.addBill(bill: m1, billId: m1.billId)
+c1.addBill(bill: i1, billId: i1.billId)
+c1.addBill(bill: h1, billId: h1.billId)
+c1.display()
+
+c2.addBill(bill: m2, billId: m2.billId)
+c2.addBill(bill: i2, billId: i2.billId)
+c2.display()
+
+c3.addBill(bill: h2, billId: h2.billId)
+c3.display()
+
+var customers = [Customer]()
+customers.append(c1)
+customers.append(c2)
+customers.append(c3)
+customers.append(c4)
+
+if customers.count==0
+{
+    print("No customers")
+}
+else
+{
+    print("***********************List Of Customers*****************************")
+    for i in customers
+    {
+        print("\(i.customerId) : \(i.fullName)")
+    }
+}
+
+   /* func findCustomerByID(id: Int)
+    {
+        for c in customers
+        {
+            if (id == c.customerId)
+            {
+               print(id)
+                
+
+            }
+            else
+            {
+                print("Customer  \(id) not found")
+            }
+        }
+        return nil
+
+    }*/
+
+    
+
 
 
 
