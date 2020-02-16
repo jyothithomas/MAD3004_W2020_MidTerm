@@ -47,12 +47,20 @@ class Customer: IDisplay
         print("Customer ID:                     \(customerId) ")
         print("Customer Name                    \(fullName)")
         print("Customer Email id                \(emailId)")
-        print("bill details")
-        for b in self.bill
+                print("bill details")
+        for i in bills
         {
-            print(b.key, ":" , b.value)
+            i.value.display()
         }
-        print("Total Amount To Pay:             \(totalAmountToPay)")
+         if bills.count == 0
+        {
+            print("This Customer has no bills")
+        }
+        else
+        {
+            calculateTotalBill()
+            print("\t \t Total Bill Amount to Pay : \(totalAmountToPay)")
+        }
         print("***********************************************************************")
     }
 }
