@@ -18,7 +18,7 @@ class Customer: IDisplay
             return "\(firstName) \(lastName)"
         }
     var emailId: String
-    var bill = [Int: Bill?]()
+    lazy var bills = [String : Bill]()
     var totalAmountToPay: Double
     {
         return self.calculateTotalBill()
