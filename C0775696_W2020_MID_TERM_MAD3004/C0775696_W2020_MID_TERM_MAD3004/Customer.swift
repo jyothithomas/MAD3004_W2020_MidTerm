@@ -19,44 +19,28 @@ class Customer: IDisplay
         }
     var emailId: String
     lazy var bills = [String : Bill]()
-    var totalAmountToPay: Double
-    {
-        return self.calculateTotalBill()
-    }
-    
-    init(customerId: Int, firstName: String, lastName: String, emailId: String, bill: [Int: Bill?]) {
+    var totalAmountToPay: Double = 0.0
+        init(customerId:Int, firstName:String, lastName:String, emailId:String) {
         self.customerId = customerId
         self.firstName = firstName
-        self.lastName = lastName
-        self.emailId = emailId
-        if let b = bill
-        {
-            self.bill[code] = b
-        }
-        else{
-            self.computer = nil
-        }
+        self.lastName = lastName 
+        self.emailId = emailId 
     }
-    subscript(code: String) -> Double
+    func addBill(bill: Bill, billId: String)
     {
-        get{
-            self.bill[code] ?? 0.0
-        }
-        set(newValue){
-            self.bill.updateValue(newValue, forKey: code)
-        }
+        bills.updateValue(bill, forKey: billId)
     }
     
-    private func calculateTotalBill() -> Double
+    func removeBill(billID:String)
     {
-        var t = 0.0
-        for b in self.bill
-        {
-            t = t + b.value
-        }
-        return t
+        bills.removeValue(forKey: billID)
     }
-
+    
+    func calculateTotalBill() {
+        for i in bills {
+            totalAmountToPay = totalAmountToPay + i.value.totalBilltoPay
+        }
+    }
     
     func display() {
         print("************************Customer Details*******************************")
