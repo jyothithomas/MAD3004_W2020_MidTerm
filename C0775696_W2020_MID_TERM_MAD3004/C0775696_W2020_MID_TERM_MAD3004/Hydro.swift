@@ -20,7 +20,7 @@ class Hydro: Bill
     }
         override func calculateTotalBill()
     {
-        self.totalBilltoPay = Double(unitConsumed)*ratePerUnit / 0.50
+        self.totalBilltoPay = Double(unitConsumed)*ratePerUnit/10
     }
     
      override func display() {
