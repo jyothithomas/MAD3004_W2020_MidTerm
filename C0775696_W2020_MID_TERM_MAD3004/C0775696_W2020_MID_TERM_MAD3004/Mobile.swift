@@ -34,6 +34,8 @@ class Mobile: Bill
     }
     
      override func display() {
+        super.display()
+        calculateTotalBill()
         print("************* Mobile Bill ******************************")
         print("mobileManufacturerName:      \(mobileManufacturerName)")
         print("planName:                    \(planName)")
