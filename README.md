@@ -15,6 +15,10 @@ References:
 
 https://stackoverflow.com/questions/25471114/how-to-validate-an-e-mail-address-in-swift
 
+https://docs.swift.org/swift-book/GuidedTour/GuidedTour.html
+
+
+
 [![Run on Repl.it](https://repl.it/badge/github/jyothithomas/MAD3004_W2020_MidTerm)](https://repl.it/github/jyothithomas/MAD3004_W2020_MidTerm)
 
 
