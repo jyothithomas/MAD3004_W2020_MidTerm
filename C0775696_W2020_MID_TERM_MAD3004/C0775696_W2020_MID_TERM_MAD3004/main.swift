@@ -8,7 +8,7 @@
 
 import Foundation
 
-var m1 = Mobile(billId: "M001", billDate: "2017-07-08".toDate(), billType: .Mobile, mobileManufacturerName: "Bell", planName: "Freedom", mobileNumber: 4372435981, internetGBUsed: 3.29, minuteUsed: 4000.0)
+var m1 = Mobile(billId: "M001", billDate: "2017-07-08".toDate(), billType: .Mobile, mobileManufacturerName: "Bell", planName: "Freedom", mobileNumber: 4372435981, internetGBUsed: 3.29, minuteUsed: 400.0)
 
 
 var h1 = Hydro(billId: "H001", billDate: "2016-07-08".toDate(), billType: .Hydro, agencyName: "Hydroessens", unitConsumed: 900)

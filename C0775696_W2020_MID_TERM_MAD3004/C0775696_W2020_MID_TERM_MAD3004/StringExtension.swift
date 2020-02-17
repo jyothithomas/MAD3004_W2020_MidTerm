@@ -37,4 +37,10 @@ extension Double
         let s = String.init(format: "$%.2f", self)
         return s
     }
+
+    func GBused() -> String
+    {
+      let s = String.init(format: "GB", self)
+      return s
+    }
 }
