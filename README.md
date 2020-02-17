@@ -22,7 +22,6 @@ https://www.tutorialspoint.com/swift/index.htm
 https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift/
 
 
-
 [![Run on Repl.it](https://repl.it/badge/github/jyothithomas/MAD3004_W2020_MidTerm)](https://repl.it/github/jyothithomas/MAD3004_W2020_MidTerm)
 
 
