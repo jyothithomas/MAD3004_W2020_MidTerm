@@ -30,7 +30,7 @@ class Mobile: Bill
     
       override func calculateTotalBill()
     {
-        self.totalBilltoPay = internetGBUsed //* 10 + Double(minuteUsed)* 0.50
+        self.totalBilltoPay = internetGBUsed * 0.05 + minuteUsed
     }
     
      override func display() {
@@ -40,7 +40,7 @@ class Mobile: Bill
         print("mobileManufacturerName:      \(mobileManufacturerName)")
         print("planName:                    \(planName)")
         print("mobileNumber:                \(mobileNumber)")
-        print("totalMobileBill:             \(totalBilltoPay)")
+        print("totalMobileBill:             \(totalBilltoPay.currency())")
         print("*********************************************************")
     }
 }

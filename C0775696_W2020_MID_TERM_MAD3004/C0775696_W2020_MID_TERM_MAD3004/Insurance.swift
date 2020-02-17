@@ -25,13 +25,13 @@ class Insurance: Bill
         return self.calculateTotalInstalment()
     }
     
-    init(billId: Int, billType: BillType, insuranceProviderName: String, typeOfInsurance: String, startDate: Date, endDate: Date)
+    init(billId: String, billType: BillType, insuranceProviderName: String, typeOfInsurance: String, startDate: Date, endDate: Date)
     {
         self.insuranceProviderName = insuranceProviderName
         self.typeOfInsurance = typeOfInsurance
         self.startDate = startDate
         self.endDate = endDate
-        super.init(billId: billId, billType: billType)
+        super.init(billId: billId, billDate: billDate ?? <#default value#>, billType: billType)
     }
     private func calculateTotalInstalment() -> Int
     {

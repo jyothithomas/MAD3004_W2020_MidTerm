@@ -13,9 +13,9 @@ var m1 = Mobile(billId: "M001", billDate: "2017-07-08".toDate(), billType: .Mobi
 
 var h1 = Hydro(billId: "H001", billDate: "2016-07-08".toDate(), billType: .Hydro, agencyName: "Hydroessens", unitConsumed: 900)
 
-var i1 = Internet(billId: "I001", billDate: "2015-01-08".toDate(), billType: .Internet,providerName: "Rogers", internetGBUsed: 4.25)
+var i1 = Internet(billId: "I001", billDate: "2015-01-08".toDate(), billType: .Internet,providerName: "Rogers", internetGBUsed: 2.25)
 
-var m2 = Mobile(billId: "M002", billDate: "2018-04-09".toDate(), billType: .Mobile, mobileManufacturerName: "Virgin", planName: "Fido", mobileNumber: 5045678901, internetGBUsed: 5.45, minuteUsed: 600.0)
+var m2 = Mobile(billId: "M002", billDate: "2018-04-09".toDate(), billType: .Mobile, mobileManufacturerName: "Virgin", planName: "Fido", mobileNumber: 5045678901, internetGBUsed: 1.45, minuteUsed: 600.0)
 
 var h2 = Hydro(billId: "H002", billDate: "2019-02-03".toDate(), billType: .Hydro,agencyName: "EssentialHydro", unitConsumed: 570)
 

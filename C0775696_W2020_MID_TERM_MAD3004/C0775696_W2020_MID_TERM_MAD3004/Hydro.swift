@@ -29,7 +29,7 @@ class Hydro: Bill
         print("************* Hydro Bill ******************************")
         print("agencyName:                      \(agencyName)")
         print("unitConsumed:                    \(unitConsumed)")
-        print("totalHydroBill:                  \(totalBilltoPay)")
+        print("totalHydroBill:                  \(totalBilltoPay.currency())")
         print("*********************************************************")
     }
     
