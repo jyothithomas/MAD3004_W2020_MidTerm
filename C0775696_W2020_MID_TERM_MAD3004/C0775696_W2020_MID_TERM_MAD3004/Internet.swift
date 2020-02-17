@@ -21,7 +21,7 @@ class Internet: Bill
     override func calculateTotalBill() 
     {
         
-         self.totalBilltoPay = internetGBUsed * 10
+         self.totalBilltoPay = internetGBUsed * 0.10
        
     }
     
