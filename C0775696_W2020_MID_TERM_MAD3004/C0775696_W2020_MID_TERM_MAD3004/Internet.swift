@@ -21,7 +21,7 @@ class Internet: Bill
     override func calculateTotalBill() 
     {
         
-         self.totalBilltoPay = internetGBUsed * 0.10
+         self.totalBilltoPay = internetGBUsed * 5
        
     }
     
@@ -30,7 +30,7 @@ class Internet: Bill
         calculateTotalBill()
         print("************* Internet Bill ******************************")
         print("Provider name:                       \(providerName)")
-        print("Internet Used in GB:                 \(internetGBUsed)")
+        print("Internet Used in GB:                 \(internetGBUsed.GBused())")
         print("Total Internet Bill:                 \(totalBilltoPay)")
         print("*********************************************************")
     }
