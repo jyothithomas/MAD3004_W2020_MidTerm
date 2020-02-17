@@ -59,7 +59,7 @@ class Customer: IDisplay
         else
         {
             calculateTotalBill()
-            print("\t \t Total Bill Amount to Pay : \(totalAmountToPay)")
+            print("\t \t Total Bill Amount to Pay : \(totalAmountToPay.currency())")
         }
         print("***********************************************************************")
     }
