@@ -24,7 +24,16 @@ class Customer: IDisplay
         self.customerId = customerId
         self.firstName = firstName
         self.lastName = lastName 
-        self.emailId = emailId 
+        self.emailId = emailId
+            if isValidEmail(self.emailId)
+            {
+              self.emailId = emailId
+            }
+              else
+            {
+              print("\nTHIS EMAIL IS INVALID: \(emailId)")
+              exit(0)
+            }
     }
     func addBill(bill: Bill, billId: String)
     {
@@ -40,6 +49,22 @@ class Customer: IDisplay
         for i in bills {
             totalAmountToPay = totalAmountToPay + i.value.totalBilltoPay
         }
+    }
+    func getCustomerById(customerId: Int)
+    {
+    var flag = 0
+    for i in customers
+      {
+         if (customerId == i.customerId)
+          {
+         print("******* Customer Details by ID ***********")
+          flag = 1
+          i.display()
+          }
+      }
+      if (flag == 0){
+        print("\n No Customer with this Id:(\(customerId)) Exist")
+      }
     }
     
     func display() {

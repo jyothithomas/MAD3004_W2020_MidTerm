@@ -27,6 +27,11 @@ class Bill: FindTotalBill, IDisplay
         self.billType = billType
     }
     
+    init(billId: String, billType: BillType) {
+        self.billId = billId
+        self.billType = billType
+    }
+    
     
     func calculateTotalBill() {
         

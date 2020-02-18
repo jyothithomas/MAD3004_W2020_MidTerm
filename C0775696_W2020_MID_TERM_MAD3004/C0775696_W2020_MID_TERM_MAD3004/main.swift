@@ -8,14 +8,14 @@
 
 import Foundation
 
-var m1 = Mobile(billId: "M001", billDate: "2017-07-08".toDate(), billType: .Mobile, mobileManufacturerName: "Bell", planName: "Freedom", mobileNumber: 4372435981, internetGBUsed: 3.29, minuteUsed: 400.0)
+var m1 = Mobile(billId: "M001", billDate: "2017-07-08".toDate(), billType: .Mobile, mobileManufacturerName: "Bell", planName: "Freedom", mobileNumber: "4372435981", internetGBUsed: 3.29, minuteUsed: 400.0)
 
 
 var h1 = Hydro(billId: "H001", billDate: "2016-07-08".toDate(), billType: .Hydro, agencyName: "Hydroessens", unitConsumed: 900)
 
 var i1 = Internet(billId: "I001", billDate: "2015-01-08".toDate(), billType: .Internet,providerName: "Rogers", internetGBUsed: 2.25)
 
-var m2 = Mobile(billId: "M002", billDate: "2018-04-09".toDate(), billType: .Mobile, mobileManufacturerName: "Virgin", planName: "Fido", mobileNumber: 5045678901, internetGBUsed: 1.45, minuteUsed: 600.0)
+var m2 = Mobile(billId: "M002", billDate: "2018-04-09".toDate(), billType: .Mobile, mobileManufacturerName: "Virgin", planName: "Fido", mobileNumber: "5045678901", internetGBUsed: 1.45, minuteUsed: 600.0)
 
 var h2 = Hydro(billId: "H002", billDate: "2019-02-03".toDate(), billType: .Hydro,agencyName: "EssentialHydro", unitConsumed: 570)
 
@@ -42,7 +42,7 @@ c3.display()
 b6.display()
 i2.display()*/
 
-//var in1 = Insurance(billId: 41, billType: .Insurance, insuranceProviderName: "Lic", typeOfInsurance: "Life Security", startDate: Date(), endDate: Date())
+var in1 = Insurance(billId: "IN001", billType: .Insurance, insuranceProviderName: "Lic", typeOfInsurance: "Life Security", startDate: "2019-09-09".toDate(), endDate: Date())
 
 c1.addBill(bill: m1, billId: m1.billId)
 c1.addBill(bill: i1, billId: i1.billId)
@@ -55,6 +55,9 @@ c2.display()
 
 c3.addBill(bill: h2, billId: h2.billId)
 c3.display()
+
+c4.addBill(bill: in1, billId: in1.billId)
+c4.display()
 
 var customers = [Customer]()
 customers.append(c1)
@@ -75,26 +78,24 @@ else
     }
 }
 
-   /* func findCustomerByID(id: Int)
-    {
-        for c in customers
-        {
-            if (id == c.customerId)
-            {
-               print(id)
-                
+   func getCustomerById(customerId: Int)
+   {
+   var flag = 0
+   for i in customers
+     {
+        if (customerId == i.customerId)
+         {
+        print("******* Customer Details by ID ***********")
+         flag = 1
+         i.display()
+         }
+     }
+     if (flag == 0){
+       print("\n No Customer with this Id:(\(customerId)) Exist")
+     }
+   }
 
-            }
-            else
-            {
-                print("Customer  \(id) not found")
-            }
-        }
-        return nil
-
-    }*/
-
-    
+//getCustomerById(customerId: 4)
 
 
 

@@ -6,7 +6,7 @@
 //  Copyright © 2020 Lambton College. All rights reserved.
 //
 
-/*import Foundation
+import Foundation
 
 class Insurance: Bill
 {
@@ -31,7 +31,7 @@ class Insurance: Bill
         self.typeOfInsurance = typeOfInsurance
         self.startDate = startDate
         self.endDate = endDate
-        super.init(billId: billId, billDate: billDate ?? <#default value#>, billType: billType)
+        super.init(billId: billId, billType: billType)
     }
     private func calculateTotalInstalment() -> Int
     {
@@ -39,8 +39,16 @@ class Insurance: Bill
         t = totalDays/30
         return t
     }
+    override func calculateTotalBill()
+    {
+        
+        self.totalBilltoPay = Double(totalInstalmenttoPay) * 5.0
+       
+    }
     
     override func display() {
+        super.display()
+        calculateTotalBill()
         print("************* Insurance Bill ******************************")
         print("Insurance Provider Name:              \(insuranceProviderName)")
         print("Type Of Insurance:                    \(typeOfInsurance)")
@@ -49,5 +57,5 @@ class Insurance: Bill
         print("*********************************************************")
     }
     
-}*/
+}
 
