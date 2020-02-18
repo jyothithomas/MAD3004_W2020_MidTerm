@@ -90,7 +90,6 @@ else
    }
 //let c5  = getCustomerById(customerId: 10)
 //c5?.display()
-//getCustomerById(customerId: 1)
 
 
 
