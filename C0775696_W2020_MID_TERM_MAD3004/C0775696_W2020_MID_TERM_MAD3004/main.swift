@@ -45,7 +45,7 @@ c2.addBill(bill: i2, billId: i2.billId)
 c3.addBill(bill: h2, billId: h2.billId)
 //c3.display()
 
-c4.addBill(bill: in1, billId: in1.billId)
+//c4.addBill(bill: in1, billId: in1.billId)
 //c4.display()
 
 //appending all customers to an array for getting customer details
