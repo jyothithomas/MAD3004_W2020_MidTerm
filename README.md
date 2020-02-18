@@ -7,7 +7,6 @@ Student Name: Jyothi Thomas
 INSTRUCTOR: Pritesh Patel
 CLASS: W2020_MAD 3004_2
 
-![alt text](/Users/macstudent/Desktop/image.png)
 
 References:
 
