@@ -8,7 +8,7 @@ INSTRUCTOR: Pritesh Patel
 CLASS: W2020_MAD 3004_2
 
 
-<img src="//Users/macstudent/Desktop/image.png" alt="Class"/>
+<img src="/Users/macstudent/Desktop/MAD3004_W2020_MidTerm/image.png" alt="Class"/>
 
 References:
 
