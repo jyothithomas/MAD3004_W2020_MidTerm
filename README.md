@@ -8,6 +8,8 @@ INSTRUCTOR: Pritesh Patel
 CLASS: W2020_MAD 3004_2
 
 
+<img src="//Users/macstudent/Desktop/image.png" alt="Class"/>
+
 References:
 
 //https://medium.com/@lugearma/converting-date-string-to-date-type-with-swift-8b6b2f07d50
