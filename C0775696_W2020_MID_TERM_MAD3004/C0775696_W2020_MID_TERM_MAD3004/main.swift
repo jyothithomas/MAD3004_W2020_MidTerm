@@ -16,7 +16,7 @@ var h1 = Hydro(billId: "H001", billDate: "2016-07-08".toDate(), billType: .Hydro
 //Object Creation for Internet Class
 var i1 = Internet(billId: "I001", billDate: "2015-01-08".toDate(), billType: .Internet,providerName: "Rogers", internetGBUsed: 2.25)
 
-var m2 = Mobile(billId: "M002", billDate: "2018-04-09".toDate(), billType: .Mobile, mobileManufacturerName: "Virgin", planName: "Fido", mobileNumber: "5045678901", internetGBUsed: 1.45, minuteUsed: 600.0)
+var m2 = Mobile(billId: "M002", billDate: "2018-04-09".toDate(), billType: .Mobile, mobileManufacturerName: "Virgin", planName: "Fido", mobileNumber: "5045678903", internetGBUsed: 1.45, minuteUsed: 600.0)
 
 var h2 = Hydro(billId: "H002", billDate: "2019-02-03".toDate(), billType: .Hydro,agencyName: "EssentialHydro", unitConsumed: 570)
 
@@ -30,23 +30,23 @@ var c3 = Customer(customerId: 3, firstName: "Raelyn", lastName: "James", emailId
 var c4 = Customer(customerId: 4, firstName: "Annos", lastName: "Mol", emailId: "ann_oos@gmail.com")
 
 
-var in1 = Insurance(billId: "IN001", billType: .Insurance, insuranceProviderName: "Lic", typeOfInsurance: "Life Security", startDate: "2019-09-09".toDate(), endDate: Date())
+var in1 = Insurance(billId: "IN001", billType: .Insurance, insuranceProviderName: "Lic", typeOfInsurance: "Life Security", startDate: "2019-09-09".toDate(), endDate: "2019-10-20".toDate())
 
 // adding bill class details to customer object
 c1.addBill(bill: m1, billId: m1.billId)
 c1.addBill(bill: i1, billId: i1.billId)
 c1.addBill(bill: h1, billId: h1.billId)
-c1.display()
+//c1.display()
 
 c2.addBill(bill: m2, billId: m2.billId)
 c2.addBill(bill: i2, billId: i2.billId)
-c2.display()
+//c2.display()
 
 c3.addBill(bill: h2, billId: h2.billId)
-c3.display()
+//c3.display()
 
 c4.addBill(bill: in1, billId: in1.billId)
-c4.display()
+//c4.display()
 
 //appending all customers to an array for getting customer details
 var customers = [Customer]()
@@ -65,11 +65,12 @@ else
     for i in customers
     {
         print("\(i.customerId) : \(i.fullName)")
+        i.display()
     }
 }
 
 //function to display the details of a customer by ID
-   func getCustomerById(customerId: Int)
+   func getCustomerById(customerId: Int) -> Customer?
    {
    var flag = 0
    for i in customers
@@ -78,14 +79,17 @@ else
          {
         print("******* Customer Details by ID ***********")
          flag = 1
-         i.display()
+         //i.display()
+            return i
          }
      }
      if (flag == 0){
        print("\n No Customer with this Id:(\(customerId)) Exist")
+        return nil
      }
    }
-
+//let c5  = getCustomerById(customerId: 10)
+//c5?.display()
 //getCustomerById(customerId: 1)
 
 
