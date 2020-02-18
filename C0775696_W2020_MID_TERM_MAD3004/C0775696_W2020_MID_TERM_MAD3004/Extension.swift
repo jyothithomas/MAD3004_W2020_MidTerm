@@ -20,7 +20,8 @@ extension String
     }
     return date
   }
-}   
+}
+    // validating the email
     func isValidEmail(_ email: String) -> Bool
     {
         //https://stackoverflow.com/questions/25471114/how-to-validate-an-e-mail-address-in-swift
@@ -31,13 +32,13 @@ extension String
 
 extension Double
 {
-    
+    // adding $ symbol with amount calculated
     func currency() -> String
     {
         let s = String.init(format: "$%.2f", self)
         return s
     }
-
+    // adding String "GB" with total GB used
     func GBused() -> String
     {
       let s = String.init(format: "%.2fGB", self)

@@ -36,17 +36,17 @@ var in1 = Insurance(billId: "IN001", billType: .Insurance, insuranceProviderName
 c1.addBill(bill: m1, billId: m1.billId)
 c1.addBill(bill: i1, billId: i1.billId)
 c1.addBill(bill: h1, billId: h1.billId)
-//c1.display()
+c1.display()
 
 c2.addBill(bill: m2, billId: m2.billId)
 c2.addBill(bill: i2, billId: i2.billId)
-//c2.display()
+c2.display()
 
 c3.addBill(bill: h2, billId: h2.billId)
-//c3.display()
+c3.display()
 
 //c4.addBill(bill: in1, billId: in1.billId)
-//c4.display()
+c4.display()
 
 //appending all customers to an array for getting customer details
 var customers = [Customer]()
@@ -65,7 +65,7 @@ else
     for i in customers
     {
         print("\(i.customerId) : \(i.fullName)")
-        i.display()
+        //i.display()
         
     }
 }
@@ -80,7 +80,7 @@ else
          {
         print("******* Customer Details by ID ***********")
          flag = 1
-         //i.display()
+         i.display()
             return i
          }
      }
