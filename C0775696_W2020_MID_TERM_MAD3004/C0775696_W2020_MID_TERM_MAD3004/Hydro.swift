@@ -27,9 +27,9 @@ class Hydro: Bill
         super.display()
         calculateTotalBill()
         print("************* Hydro Bill ******************************")
-        print("agencyName:                      \(agencyName)")
-        print("unitConsumed:                    \(unitConsumed)")
-        print("totalHydroBill:                  \(totalBilltoPay.currency())")
+        print("agencyName        :                  \(agencyName)")
+        print("unitConsumed      :                  \(unitConsumed)")
+        print("totalHydroBill    :                  \(totalBilltoPay.currency())")
         print("*********************************************************")
     }
     

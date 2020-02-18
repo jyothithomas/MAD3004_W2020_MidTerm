@@ -39,12 +39,12 @@ class Bill: FindTotalBill, IDisplay
     
     
     func display() {
-      print("***************BILL**********************")
-      print("Bill Id:          :\(self.billId)")
-       print("Bill Type:      :\(self.billType)")
+      print("***************BILL***********************")
+      print("Bill Id            :                \(self.billId)")
+      print("Bill Type          :                \(self.billType)")
       if let d = self.billDate
       {
-       print("Bill Date:    : \(d)")
+       print("Bill Date          :                 \(d)")
       } else {
           print("-- No Bill Date Found")
       }

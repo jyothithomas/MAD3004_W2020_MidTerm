@@ -45,10 +45,10 @@ class Mobile: Bill
         super.display()
         calculateTotalBill()
         print("************* Mobile Bill ******************************")
-        print("mobileManufacturerName:      \(mobileManufacturerName)")
-        print("planName:                    \(planName)")
-        print("mobileNumber:                \(mobileNumber)")
-        print("totalMobileBill:             \(totalBilltoPay.currency())")
+        print("mobileManufacturerName    :     \(mobileManufacturerName)")
+        print("planName                  :     \(planName)")
+        print("mobileNumber              :     \(mobileNumber)")
+        print("totalMobileBill           :     \(totalBilltoPay.currency())")
         print("*********************************************************")
     }
 }

@@ -29,9 +29,9 @@ class Internet: Bill
         super.display()
         calculateTotalBill()
         print("************* Internet Bill ******************************")
-        print("Provider name:                       \(providerName)")
-        print("Internet Used in GB:                 \(internetGBUsed.GBused())")
-        print("Total Internet Bill:                 \(totalBilltoPay.currency())")
+        print("Provider name        :                 \(providerName)")
+        print("Internet Used in GB  :                 \(internetGBUsed.GBused())")
+        print("Total Internet Bill  :                 \(totalBilltoPay.currency())")
         print("*********************************************************")
     }
     

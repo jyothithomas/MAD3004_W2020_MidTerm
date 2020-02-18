@@ -69,9 +69,9 @@ class Customer: IDisplay
     
     func display() {
         print("************************Customer Details*******************************")
-        print("Customer ID:                     \(customerId) ")
-        print("Customer Name                    \(fullName)")
-        print("Customer Email id                \(emailId)")
+        print("Customer ID           :          \(customerId) ")
+        print("Customer Name         :          \(fullName)")
+        print("Customer Email id     :          \(emailId)")
                 print("bill details")
         for i in bills
         {

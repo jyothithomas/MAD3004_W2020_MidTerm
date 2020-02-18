@@ -50,10 +50,10 @@ class Insurance: Bill
         super.display()
         calculateTotalBill()
         print("************* Insurance Bill ******************************")
-        print("Insurance Provider Name:              \(insuranceProviderName)")
-        print("Type Of Insurance:                    \(typeOfInsurance)")
-        print("Total Days:                           \(totalDays)")
-        print("Total Instalments to Pay:             \(totalInstalmenttoPay)")
+        print("Insurance Provider Name  :             \(insuranceProviderName)")
+        print("Type Of Insurance        :             \(typeOfInsurance)")
+        print("Total Days               :             \(totalDays)")
+        print("Total Instalments to Pay :             \(totalInstalmenttoPay)")
         print("*********************************************************")
     }
     
