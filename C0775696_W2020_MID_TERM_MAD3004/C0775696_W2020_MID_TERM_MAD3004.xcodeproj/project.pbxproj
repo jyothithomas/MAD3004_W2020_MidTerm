@@ -11,7 +11,7 @@
 		9B695F8523F5FE9600DA8208 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B695F8423F5FE9600DA8208 /* main.swift */; };
 		9B695F8C23F5FEEB00DA8208 /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B695F8B23F5FEEB00DA8208 /* IDisplay.swift */; };
 		9B695F8E23F5FF1300DA8208 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B695F8D23F5FF1300DA8208 /* Bill.swift */; };
-		9B7504DA23F74A3800835E70 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7504D923F74A3800835E70 /* Extension.swift */; };
+		9B7504DA23F74A3800835E70 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7504D923F74A3800835E70 /* StringExtension.swift */; };
 		9B9E9C4C23F6090E00EF5299 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9E9C4B23F6090E00EF5299 /* Mobile.swift */; };
 		9B9E9C4E23F60FE200EF5299 /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9E9C4D23F60FE200EF5299 /* Hydro.swift */; };
 		9B9E9C5023F612C000EF5299 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9E9C4F23F612C000EF5299 /* Internet.swift */; };
@@ -37,7 +37,7 @@
 		9B695F8423F5FE9600DA8208 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9B695F8B23F5FEEB00DA8208 /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
 		9B695F8D23F5FF1300DA8208 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
-		9B7504D923F74A3800835E70 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		9B7504D923F74A3800835E70 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		9B9E9C4B23F6090E00EF5299 /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 		9B9E9C4D23F60FE200EF5299 /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
 		9B9E9C4F23F612C000EF5299 /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 				9B9E9C4F23F612C000EF5299 /* Internet.swift */,
 				9B9E9C5123F6144E00EF5299 /* Customer.swift */,
 				9B9E9C5323F62BB100EF5299 /* Insurance.swift */,
-				9B7504D923F74A3800835E70 /* Extension.swift */,
+				9B7504D923F74A3800835E70 /* StringExtension.swift */,
 				4795F18223FB30B0009FF8FF /* FindTotalBill.swift */,
 			);
 			path = C0775696_W2020_MID_TERM_MAD3004;
@@ -152,7 +152,7 @@
 				9B9E9C5423F62BB100EF5299 /* Insurance.swift in Sources */,
 				9B9E9C4E23F60FE200EF5299 /* Hydro.swift in Sources */,
 				9B695F8C23F5FEEB00DA8208 /* IDisplay.swift in Sources */,
-				9B7504DA23F74A3800835E70 /* Extension.swift in Sources */,
+				9B7504DA23F74A3800835E70 /* StringExtension.swift in Sources */,
 				4795F18323FB30B0009FF8FF /* FindTotalBill.swift in Sources */,
 				9B695F8E23F5FF1300DA8208 /* Bill.swift in Sources */,
 				9B695F8523F5FE9600DA8208 /* main.swift in Sources */,
