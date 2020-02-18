@@ -21,7 +21,7 @@ var m2 = Mobile(billId: "M002", billDate: "2018-04-09".toDate(), billType: .Mobi
 var h2 = Hydro(billId: "H002", billDate: "2019-02-03".toDate(), billType: .Hydro,agencyName: "EssentialHydro", unitConsumed: 570)
 
 
-var i2 = Internet(billId: "I002", billDate: "2015-01-08".toDate(), billType: .Mobile,providerName: "BSNL", internetGBUsed: 7.75)
+var i2 = Internet(billId: "I002", billDate: "2015-01-08".toDate(), billType: .Internet,providerName: "BSNL", internetGBUsed: 7.75)
 
 // Object Creation For customer Class
 var c1 = Customer(customerId: 1, firstName: "Jyothi", lastName: "Thomas", emailId: "jyothithomas.05@gmail.com")
@@ -90,7 +90,6 @@ else
    }
 //let c5  = getCustomerById(customerId: 10)
 //c5?.display()
-
 
 
 
