@@ -8,6 +8,7 @@ INSTRUCTOR: Pritesh Patel
 CLASS: W2020_MAD 3004_2
 
 
+![Image description](/Users/macstudent/Desktop/Screen Shot 2020-02-18 at 5.59.39 PM.png)
 
 References:
 
