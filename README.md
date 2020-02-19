@@ -2,10 +2,10 @@
 
 # Customer Bill Calculation
 
-** Student Id: C0775696
-** Student Name: Jyothi Thomas
-** INSTRUCTOR: Pritesh Patel
-** CLASS: W2020_MAD 3004_2
+## Student Id       :      C0775696
+###  Student Name     :    Jyothi Thomas
+###  Instructor             : Pritesh Patel
+###  Class                   : W2020_MAD 3004_2
 
 
 References:
