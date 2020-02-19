@@ -55,7 +55,7 @@ customers.append(c2)
 customers.append(c3)
 customers.append(c4)
 
-if customers.count==0
+if customers.count == 0
 {
     print("No customers")
 }
